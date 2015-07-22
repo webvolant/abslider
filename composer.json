@@ -1,0 +1,46 @@
+{
+    "name": "webvolant/abslider",
+    "description": "AdminPanel for Laravel 5",
+    "keywords": [
+        "webvolant",
+        "abslider"
+    ],
+    "homepage": "https://github.com/webvolant/abslider",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "absolutions",
+            "email": "barkalov_anton@mail.ru",
+            "homepage": "absolutions.com",
+            "role": "Developer"
+        }
+    ],
+    "require": {
+        "php" : ">=5.3.0",
+        "laravelcollective/html": "~5.0"
+    },
+    "require-dev": {
+        "phpunit/phpunit" : "4.*",
+        "scrutinizer/ocular": "~1.1"
+    },
+    "autoload": {
+        "psr-4": {
+            "App\\": "app/",
+            "webvolant\\abslider\\": "src/",
+            "webvolant\\abslider\\Http\\Middleware\\": "src/Http/Middleware/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "webvolant\\abslider\\Test\\": "tests"
+        }
+    },
+    "scripts": {
+        "test": "phpunit"
+    },
+    "extra": {
+        "branch-alias": {
+            "master": "1.0"
+        }
+    }
+}
